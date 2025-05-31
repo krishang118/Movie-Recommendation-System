@@ -1,6 +1,7 @@
 # Movie Recommendation System
 
 This project is a content-based movie recommendation system built using Python and the [MovieLens Dataset](https://grouplens.org/datasets/movielens/32m/). 
+
 It analyses movie metadata such as genres, user tags, and popularity ratings to recommend similar movies. The system performs data preprocessing, TF-IDF vectorization, and cosine similarity computation for generating high-quality recommendations.
 
 ---
