@@ -1,28 +1,43 @@
-# Movie-Recommendation-System
+# Movie Recommendation System
 
-# 🎬 Simple Movie Recommender System
-
-This project is a **content-based movie recommendation system** built using Python and the [MovieLens Dataset](https://grouplens.org/datasets/movielens/). It uses movie metadata such as genres, user tags, and popularity ratings to recommend similar movies. The system performs data preprocessing, text vectorization, and cosine similarity computation for generating high-quality recommendations.
-
----
-
-## 📦 Features
-
-- Load and preprocess `movies.csv`, `ratings.csv`, `tags.csv`, and `links.csv`.
-- Merge and clean genre and tag information.
-- Generate popularity labels using average rating and count.
-- Use TF-IDF vectorization on metadata (genres + tags + popularity).
-- Compute cosine similarity between movies.
-- Support fuzzy title matching (e.g. “Dark Nite” → “The Dark Knight”).
-- Get top-k recommendations based on similarity.
-- Save and load trained models for efficiency.
+This project is a content-based movie recommendation system built using Python and the [MovieLens Dataset](https://grouplens.org/datasets/movielens/32m/). 
+It analyses movie metadata such as genres, user tags, and popularity ratings to recommend similar movies. The system performs data preprocessing, TF-IDF vectorization, and cosine similarity computation for generating high-quality recommendations.
 
 ---
 
-## ⚙️ Installation
+## Features
 
-### 1. Clone the repository
+- Loads and preprocesses the available data files: `movies.csv`, `ratings.csv`, `tags.csv`, and `links.csv`.
+- Merges and cleans genre and tag information.
+- Generates popularity labels using average rating and count.
+- Uses TF-IDF vectorization on metadata (genres + tags + popularity).
+- Computes cosine similarity between the movies.
+- Supports fuzzy title matching with typo tolerance (e.g. “Dark Nite” → “The Dark Knight”).
+- Gets top-k recommendations based on similarity.
+- Saves and loads trained models for efficiency.
+
+---
+
+## Prerequisites
 
 ```bash
-git clone https://github.com/your-username/movie-recommender.git
-cd movie-recommender
+pip install pandas numpy scikit-learn
+```
+
+## Installation
+
+1. Download and extract the required MovieLens Dataset on your local machine.
+2. Clone this repository on your local machine, and run the Jupyter Notebook file.
+
+---
+
+## Contributing
+
+Contributions are welcome!
+
+---
+
+## License
+
+Distributed under the MIT License.  
+
