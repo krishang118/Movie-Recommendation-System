@@ -15,8 +15,7 @@ It analyses movie metadata such as genres, user tags, and popularity ratings to 
 - Computes cosine similarity between the movies.
 - Supports fuzzy title matching with typo tolerance (e.g. “Dark Nite” → “The Dark Knight”).
 - Gets top-k recommendations based on similarity.
-- Saves and loads trained models for efficiency.
-
+  
 ---
 
 ## Prerequisites
